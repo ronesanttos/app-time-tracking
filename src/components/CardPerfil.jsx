@@ -1,4 +1,4 @@
-const CardPerfil = () => {
+const CardPerfil = ({handleClick}) => {
   return (
     <div className="container-perfil">
       <div className="card-perfil">
@@ -9,9 +9,9 @@ const CardPerfil = () => {
         <h1>Jeremy Robson</h1>
       </div>
       <div className="btns">
-          <button>Daily</button>
-          <button>Weekly</button>
-          <button>Monthly</button>
+          <button onClick={() => handleClick("daily")}>Daily</button>
+          <button onClick={() => handleClick("weekly")}>Weekly</button>
+          <button onClick={() => handleClick("monthly")}>Monthly</button>
       </div>
     </div>
   );

@@ -19,14 +19,14 @@ body {
   justify-content: center;
   align-items: center;
   gap: 25px;
-  background-color: red;
-  height: 400px;
+  max-width: 900px;
+  height: 420px;
 }
 
 .card-principal {
   display: flex;
   gap: 25px;
-  row-gap: 10px;
+  row-gap: 25px;
   flex-wrap: wrap;
   width: 800px;
   height: 100%;
@@ -97,21 +97,19 @@ button:hover {
 .container-card-map {
   display: flex;
   flex-direction: column;
-  background-color: orange;
   width: 200px;
   height: 180px;
   border-radius: 10px;
 }
 
 .card-map-img {
-  width: 40px;
+  width: 70px;
   height: 40px;
-  padding-top: 2px;
-  margin-left: 80%;
+  margin-left: 55%;
 }
 .card-map-img img {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .card-map {
@@ -141,7 +139,7 @@ button:hover {
 }
 
 .timer h2 {
-  font-size: 52px;
+  font-size: 44px;
   font-weight: 400;
 }
 
@@ -149,4 +147,23 @@ button:hover {
   font-size: 14px;
   padding-top: 10px;
   color: hsl(236, 100%, 87%);
+}
+
+.orange {
+  background-color: hsl(15, 100%, 70%);
+}
+.aqua {
+  background-color: hsl(195, 74%, 62%);
+}
+.red {
+  background-color: hsl(348, 100%, 68%);
+}
+.green {
+  background-color: hsl(145, 58%, 55%);
+}
+.violet {
+  background-color: hsl(264, 64%, 52%);
+}
+.yellow {
+  background-color: hsl(43, 84%, 65%);
 }
