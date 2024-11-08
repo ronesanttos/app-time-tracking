@@ -7,20 +7,45 @@ function App() {
   const [title, setTitle] = useState(
     data.map((title, index) => data[index].title)
   );
+
   const [current, setCurrent] = useState(
     data.map((timeframes, index) => data[index].timeframes.weekly.current)
   );
   const [previous, setPrevious] = useState(
     data.map((timeframes, index) => data[index].timeframes.weekly.previous)
   );
-  const handleClick = () => {
-    const newCurrent = data.map((timeframes, index) => data[index].timeframes.daily.current);
-    setCurrent(newCurrent)
+  const handleDaily = () => {
+    setCurrent((current) =>
+      data.map((timeframes, index) => data[index].timeframes.daily.current)
+    );
+    setPrevious((previous) =>
+      data.map((timeframes, index) => data[index].timeframes.daily.previous)
+    );
+  };
+  const handleWeekly = () => {
+    setCurrent((current) =>
+      data.map((timeframes, index) => data[index].timeframes.weekly.current)
+    );
+    setPrevious((previous) =>
+      data.map((timeframes, index) => data[index].timeframes.weekly.previous)
+    );
+  };
+  const handleMonthly = () => {
+    setCurrent((current) =>
+      data.map((timeframes, index) => data[index].timeframes.monthly.current)
+    );
+    setPrevious((previous) =>
+      data.map((timeframes, index) => data[index].timeframes.monthly.previous)
+    );
   };
 
   return (
     <div className="container-principal">
-      <CardPerfil handleClick={handleClick} />
+      <CardPerfil
+        handleDaily={handleDaily}
+        handleWeekly={handleWeekly}
+        handleMonthly={handleMonthly}
+      />
       <div className="card-principal">
         <CardMap
           title={title[0]}

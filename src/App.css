@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 body {
   background-color: hsl(226, 43%, 10%);
@@ -51,7 +52,7 @@ body {
   width: 65px;
   height: 65px;
   margin: 22px;
-  border: 2px solid white;
+  border: 3px solid white;
   border-radius: 50%;
 }
 .perfil-img img {
@@ -60,15 +61,17 @@ body {
 }
 
 .card-perfil p {
-  color: white;
+  color: hsl(236, 100%, 87%); 
   padding-left: 25px;
   padding-top: 10px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .card-perfil h1 {
   color: white;
+  font-weight: 200;
   padding-left: 25px;
+  padding-top: 8px;
 }
 
 .btns {
@@ -92,6 +95,7 @@ body {
 
 button:hover {
   cursor: pointer;
+  color: hsl(236, 100%, 87%);
 }
 
 .container-card-map {
@@ -121,6 +125,10 @@ button:hover {
   padding: 20px 20px;
   color: white;
 }
+.card-map:hover {
+  background-color:  hsl(235, 45%, 40%);
+  transition: 0.5s;
+}
 .details-time {
   display: flex;
   justify-content: space-between;
@@ -129,18 +137,21 @@ button:hover {
 
 .details-time button {
   background-color: transparent;
-  color: white;
-  font-weight: bold;
+  color: hsl(236, 100%, 87%);
+  font-weight: 900;
+  font-size: 20px;
   border: none;
 }
-
+.details-time button:hover {
+  color: white;
+}
 .timer {
   display: block;
 }
 
 .timer h2 {
   font-size: 44px;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .timer p {
