@@ -3,10 +3,12 @@ const CardPerfil = ({handleDaily, handleWeekly,handleMonthly}) => {
     <div className="container-perfil">
       <div className="card-perfil">
         <div className="perfil-img">
-          <img src="../../public/images/image-jeremy.png" alt="Avatart" />
+          <img src="/images/image-jeremy.png" alt="Avatart" />
         </div>
-        <p>Report for</p>
-        <h1>Jeremy Robson</h1>
+        <div className="info">
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
       </div>
       <div className="btns">
           <button onClick={() => handleDaily()}>Daily</button>
